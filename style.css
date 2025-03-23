@@ -12,10 +12,11 @@
 
 #TEXT
 {
-    background-color: rgb(255, 2, 120); COLOR: rgb(0, 0, 0); padding: 5px; border: 5px solid rgb(0, 0, 0); Border-radius:20px; margin-left: 1100px; margin-top: 150px; margin-right: 300px;
+    background-color: rgb(255, 2, 120); COLOR: rgb(0, 0, 0); padding: 5px; border: 5px solid rgb(0, 0, 0); Border-radius:20px; 
+    margin-left: 1100px; margin-top: 150px; margin-right: 300px;
 }
 
 #BTN1
 {
-    background-color: rgb(255, 2, 120); COLOR: rgb(0, 0, 0); padding: 10px; border: 5px solid rgb(0, 0, 0); Border-radius:20px; font-style: BOLD;
+    background-color: rgb(255, 2, 120); COLOR: rgb(0, 0, 0); padding: 10px; margin-inline: 700px; border: 5px solid rgb(0, 0, 0); Border-radius:20px; font-style: BOLD;
 }
