@@ -22,25 +22,21 @@
             function resizeElements() {
                 let width = window.innerWidth;
         
-                // Scale H1 text size
+                
                 let websiteTitle = document.getElementById("website");
                 if (websiteTitle) {
-                    websiteTitle.style.fontSize = (width * 0.03) + "px"; // 3% of the viewport width
+                    websiteTitle.style.fontSize = (width * 0.03) + "px"; 
                 }
         
                 // Scale Button Sizes
                 let buttons = document.querySelectorAll("#btn");
                 buttons.forEach(button => {
-                    button.style.fontSize = (width * 0.02) + "px"; // 2% of the viewport width
-                    button.style.padding = (width * 0.005) + "px"; // 0.5% of viewport width
-                    button.style.marginInline = (width * 0.15) + "px"; // Keep it proportional
+                    button.style.fontSize = (width * 0.02) + "px"; 
+                    button.style.padding = (width * 0.005) + "px"; 
+                    button.style.marginInline = (width * 0.15) + "px"; 
                 });
             }
-        
-            // Adjust elements on resize
             window.addEventListener("resize", resizeElements);
-            
-            // Initial Call
             resizeElements();
         </script>
         <FONT COLOR="BLACK">
