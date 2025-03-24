@@ -1,6 +1,27 @@
 <HTML>
 
 <HEAD>
+    <script>
+    window.onload = window.onresize = function() {
+        let images = document.querySelectorAll(".image-row img");
+        let windowWidth = window.innerWidth;
+        let windowHeight = window.innerHeight;
+        
+        images.forEach(img => {
+            let aspectRatio = img.naturalWidth / img.naturalHeight;
+            let maxWidth = windowWidth * 0.3; // Each image takes up 30% of the window width
+            let maxHeight = windowHeight * 0.3; // Each image takes up 30% of the window height
+            
+            if (maxWidth / aspectRatio <= maxHeight) {
+                img.style.width = maxWidth + "px";
+                img.style.height = (maxWidth / aspectRatio) + "px";
+            } else {
+                img.style.height = maxHeight + "px";
+                img.style.width = (maxHeight * aspectRatio) + "px";
+            }
+        });
+    };
+    </script>
     <style>
         a:link {
             color: black;
@@ -36,15 +57,15 @@
         <div id="text">
             <H5>Proof for option 1 (The one all the way to the left):
                 <br></br>
-                1. Segment PQ is the congruent to Segment ST | 1. Given
+                1. Segment PQ ≅ Segment ST | 1. Given
                 <BR></BR>
-                2. Segment QR is congruent to Segment TR | 2. Given
+                2. Segment QR ≅  Segment TR | 2. Given
                 <BR></BR>
                 3. R is the midpoint of Segment PS | 3. Given
                 <BR></BR>
-                4. Segment PR is congruent to Segment SR | 4. Midpoint Theorem
+                4. Segment PR ≅  Segment SR | 4. Midpoint Theorem
                 <BR></BR>
-                5. Triangle PQR is congruent to Triangle STR | 5. SSS
+                5. △PQR ≅ △STR | 5. SSS
             </H5>
         </div>
         <div id="btn1"><a href="https://kingofh3ll2573.github.io/Project-Math/Main%20Page.html" title="ASA">Click here to go back to the main page!</A></div>
