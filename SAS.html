@@ -11,7 +11,7 @@
             let aspectRatio = img.naturalWidth / img.naturalHeight;
             let maxWidth = windowWidth * 0.3; // Each image takes up 30% of the window width
             let maxHeight = windowHeight * 0.3; // Each image takes up 30% of the window height
-            
+        
             if (maxWidth / aspectRatio <= maxHeight) {
                 img.style.width = maxWidth + "px";
                 img.style.height = (maxWidth / aspectRatio) + "px";
