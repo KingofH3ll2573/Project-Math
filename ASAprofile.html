@@ -1,57 +1,70 @@
 <HTML>
-    <HEAD>
-        <style>
-            a:link {
-              color: black;
-            }
-            body {
-                background-image: url('project wallpaper.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-attachment: fixed;
-                background-size: cover;
-                 }
-            </style>
-        <LINK rel="stylesheet" TYPE="TEXT/CSS" href="style.css">
+
+<HEAD>
+    <style>
+        a:link {
+            color: black;
+        }
+
+        body {
+            background-image: url('project wallpaper.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <LINK rel="stylesheet" TYPE="TEXT/CSS" href="style.css">
     <TITLE>TriangleCongruenceMatch.com</TITLE>
-    <BODY bgcolor="WHITE">
-        <script>
-            function updateSizes() {
-                let width = window.innerWidth;
-                let textElement = document.getElementById("text");
-                let btnElement = document.getElementById("btn1");
-        
-                // Adjust font size proportionally
-                let fontSize = width * 0.02; // 2% of window width
-                textElement.style.fontSize = fontSize + "px";
-        
-                // Adjust margins proportionally
-                let marginSize = width * 0.05; // 5% of window width
-                textElement.style.marginLeft = marginSize + "px";
-                textElement.style.marginRight = marginSize + "px";
-                textElement.style.marginTop = width * 0.02 + "px"; // Adjust top margin too
-        
-                // Adjust button margin dynamically
-                btnElement.style.marginInline = width * 0.2 + "px"; // 20% of window width
-            }
-        
-            // Run when window resizes
-            window.addEventListener("resize", updateSizes);
-        
-            // Run on page load
-            updateSizes();
-        </script>
-        <FONT COLOR="BLACK">
-            <CENTER>
-            <H1><div id="website">Here is Awesome Swordsman Ace:</div></H1>
-            <H1><div id="text">Awesome Swordsman Ace is a man who is gifted with the ability to handle a sword in ways
-                you would think are impossible. Besides the fact that he is an amazing swordsman, he is a very funny guy
-                who doesn't always act the brightest. He will always make your day because of the silly dances and faces
-                he does. He is looking for triangles that has two congruent angle pairs with a congruent side in the middle
-                of those two angles. </div></H1>
-                <div id="btn1"><a href="ASA.html">Click here to see all matches!</a></div>
+
+<BODY bgcolor="WHITE">
+    <script>
+        function updateSizes() {
+            let width = window.innerWidth;
+            let textElement = document.getElementById("text");
+            let btnElement = document.getElementById("btn1");
+
+            // Adjust font size proportionally
+            let fontSize = width * 0.02; // 2% of window width
+            textElement.style.fontSize = fontSize + "px";
+
+            // Adjust margins proportionally
+            let marginSize = width * 0.05; // 5% of window width
+            textElement.style.marginLeft = marginSize + "px";
+            textElement.style.marginRight = marginSize + "px";
+            textElement.style.marginTop = width * 0.02 + "px"; // Adjust top margin too
+
+            // Adjust button margin dynamically
+            btnElement.style.marginInline = width * 0.2 + "px"; // 20% of window width
+        }
+
+        // Run when window resizes
+        window.addEventListener("resize", updateSizes);
+
+        // Run on page load
+        updateSizes();
+    </script>
+    <FONT COLOR="BLACK">
+        <MARQUEE>TriangleCongruenceMatch.com made by Shlok, Dhairya, and Mawuli</MARQUEE>
+        <CENTER>
+            <H1>
+                <div id="website">Here is Awesome Swordsman Ace:</div>
+            </H1>
+            <IMG SRC="ASAprofilepicture.png">
+            <H1>
+                <div id="text">Awesome Swordsman Ace is a man who is gifted with the ability to handle a sword in ways
+                    you would think are impossible. Besides the fact that he is an amazing swordsman, he is a very funny
+                    guy
+                    who doesn't always act the brightest. He will always make your day because of the silly dances and
+                    faces
+                    he does. He is looking for triangles that has two congruent angle pairs with a congruent side in the
+                    middle
+                    of those two angles. </div>
+            </H1>
+            <div id="btn1"><a href="ASA.html">Click here to see all matches!</a></div>
         </CENTER>
-        </FONT>
-    </BODY>
-    </HEAD>
-    </HTML>
+    </FONT>
+</BODY>
+</HEAD>
+
+</HTML>
