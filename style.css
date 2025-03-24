@@ -7,7 +7,7 @@
     border: 5px solid rgb(0, 0, 0);
     border-radius: 10px;
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
-    font-size: 3vw; /* Make it responsive */
+    font-size: 2vw; /* Make it responsive */
     font-weight: bold;
     text-decoration: underline;
 }
@@ -32,7 +32,6 @@
     border-radius: 20px;
     margin: 5vw;
     font-size: 2vw;
-    text-align: center;
 }
 
 #btn1 {
@@ -46,4 +45,9 @@
     justify-content: center;
     margin: auto;
     width: fit-content;
+}
+
+.image-row{
+    display: flex;
+    justify-content: space-evenly;
 }
