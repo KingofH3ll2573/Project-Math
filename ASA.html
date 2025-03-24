@@ -1,6 +1,27 @@
 <HTML>
 
 <HEAD>
+    <script>
+    window.onload = window.onresize = function() {
+        let images = document.querySelectorAll(".image-row img");
+        let windowWidth = window.innerWidth;
+        let windowHeight = window.innerHeight;
+        
+        images.forEach(img => {
+            let aspectRatio = img.naturalWidth / img.naturalHeight;
+            let maxWidth = windowWidth * 0.3; // Each image takes up 30% of the window width
+            let maxHeight = windowHeight * 0.3; // Each image takes up 30% of the window height
+            
+            if (maxWidth / aspectRatio <= maxHeight) {
+                img.style.width = maxWidth + "px";
+                img.style.height = (maxWidth / aspectRatio) + "px";
+            } else {
+                img.style.height = maxHeight + "px";
+                img.style.width = (maxHeight * aspectRatio) + "px";
+            }
+        });
+    };
+    </script>
     <style>
         a:link {
             color: black;
